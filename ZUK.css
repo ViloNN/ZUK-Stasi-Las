@@ -1,0 +1,897 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+header {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.lewa-strona {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.main-logo {
+    width: 8vmax;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-logo img {
+    min-width: 10%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linki-div {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.linki-div ul {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+    padding-left: 3vmax;
+}
+
+.linki-div ul li {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linki-div ul li a {
+    height: 25px;
+    display: flex;
+    font-size: 1vmax;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: .333333;
+
+}
+
+.strzalka-div {
+    margin-left: 10px;
+    width: .6vmax;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Strzalka-w-góre {
+    width: 100%;
+    height: auto;
+    transform: rotateZ(180deg)
+}
+
+.Strona-Główna {
+    color: #0370cf !important;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.prawa-strona {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    justify-self: right;
+}
+
+.prawa-strona span {
+    height: max-content;
+    display: flex;
+    gap: 15px;
+    color: #185E9C;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vmax;
+    align-items: center;
+    justify-content: center;
+}
+
+.telefon {
+    width: 1.15vmax;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.telefon img {
+    width: 100%;
+    height: auto;
+}
+
+.Strona-Główna:hover, .Wynajem:hover, .Sprzedaż:hover, .Kontakt:hover
+{
+    color: black;
+    font-weight: 600;
+}
+
+.Sprzedaż:focus-within
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 87vh;
+    height: 43vh;
+    z-index: 99999;
+    left: calc(50% - 640px/2 + 165px);
+    top: 74px;
+    background: #FFFFFF;
+    border: 1px solid #EAECF0;
+    box-sizing: border-box;
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+    border-radius: 8px; 
+}
+
+.div-z-truckiem {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #E0F2F0;
+}
+
+.goraTruck {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #E0F2F0;
+}
+
+.lewa-strona-diva-z-truckiem {
+    width: 40%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.tekst-1 {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: .5vmax;
+}
+
+.tekst-1 h1 {
+    font-size: 2vmax;
+    font-size: 2vw;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    color: #0C0C0C;
+}
+
+.tekst-1 span {
+    font-size: 1vmax;
+    font-size: 1vw;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    color: #333333;
+}
+
+.przycisk {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vmax;
+}
+
+.przycisk a {
+    text-decoration: none;
+    padding: 1vmax 1.8vmax 1vmax 1.8vmax;
+    background-color: #185E9C;
+    border-radius: 4px;
+    font-size: 1.1vmax;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.prawa-strona-diva-z-truckiem {
+    width: 100%;
+    height: 100%;
+    margin-right: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.truck {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: transparent;
+}
+
+.truck img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    z-index: 9999;
+}
+
+.dolTruck {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+@media only screen and (min-width: 1440px) {
+    .div-kolo {
+        top: 62vh !important;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .div-kolo {
+        top: 58vh !important;
+    }
+}
+
+.div-kolo a
+{
+    margin-top: 4vh;
+    width: 7vh;
+    height: 7vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-kolo
+{
+    position: absolute;
+    top: 65vh;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 360%;
+    background: #185E9C;
+    margin-right: 13%;
+    
+}
+
+.arrow-kolo
+{
+    width: 40%;
+    height: auto;
+}
+
+.allContent {
+    width: 100%;
+    height: 70vh;
+    margin-left: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+.zdjecie-professional
+{
+    width: 35%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-zdj
+{
+    width: 100%;
+    height: auto;
+}
+
+.tekst-2
+{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.3vmax;
+}
+
+.o-nas
+{
+    width: auto;
+    height: max-content;
+    text-align: left;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    color: #185E9C;
+}
+
+.ZUK-title
+{
+    width: auto;
+    height: max-content;
+    text-align: left;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+    font-size: 1.8vmax;
+    font-size: 1.8vw;
+    color: #0C0C0C;
+}
+
+.pod-tekst
+{
+    width: auto;
+    height: max-content;
+    text-align: left;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vmax;
+    font-size: 1.2vw;
+    color: #333333;
+}
+
+.ofertaContent
+{
+    width: 100%;
+    height: 50vh;
+    /*margin-left: 1vh;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #185E9C;
+}
+
+.tekst-3
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.3vmax;
+}
+
+.oferta
+{
+    width: auto;
+    height: max-content;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vmax;
+    font-size: 1vw;
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+}
+
+.oferta2
+{
+    width: auto;
+    height: max-content;
+    text-align: left;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5vmax;
+    font-size: 2.5vw;
+    color: #FFFFFF;
+}
+
+.allBox
+{
+    margin-top: 10vh;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    cursor: pointer;
+}
+
+.box1:hover, .box2:hover, .box3:hover
+{
+    border: .8vh solid #E0F2F0;
+    box-shadow: 0 0 1em black;
+}
+
+.box1, .box2, .box3
+{
+    width: 30%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 4px solid #E0F2F0;
+    box-sizing: border-box;
+    box-shadow: 8px 10px 24px rgba(0, 0, 0, 0.10);
+    border-radius: 16px;
+}
+
+.image1, .image2, .image3
+{
+    width: 5vmax;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.obrazek1, .obrazek2, .obrazek3
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.tekst1, .tekst2, .tekst3
+{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tekst-box1, .tekst-box2, .tekst-box3
+{
+    font-size: 1.4vmax;
+    font-size: 1.4vw;
+    font-family: 'Lato';
+    font-style: normal;
+    align-items: center;
+    justify-content: center;
+    color: #0C0C0C;
+}
+
+.icon-help1, .icon-help2, .icon-help3
+{
+    width: 20%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kontaktContent
+{
+    width: 100%;
+    height: 100vh;
+    /*margin-left: 1vh;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tekst-4
+{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.3vmax;
+}
+
+.kontakt
+{
+    width: auto;
+    height: max-content;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vmax;
+    font-size: 1vw;
+    line-height: 130%;
+    letter-spacing: 0.2em;
+    color: #185E9C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kontakt-title
+{
+    width: auto;
+    height: max-content;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5vmax;
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0C0C0C;
+}
+
+.dół {
+    width: auto;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: -50vh;
+    gap: 5%;
+}
+
+.mapa1
+{
+    width: 55vmax;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa2
+{
+    width: 95%;
+    height: auto;
+    margin-top: 10vh;
+}
+
+.wszystkie-teksty
+{
+    width: auto;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.txtUndr {
+    margin-top: 15vh;
+    width: 35vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15vh;
+    gap: 3vh;
+}
+
+
+.teksty1
+{
+    margin-top: 13vh;
+    width: auto;
+    height: max-content;
+    display: flex;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5vmax;
+    font-size: 1.5vw;
+    line-height: 2.3vmax;
+    color: #101828;
+}
+
+.ulica
+{
+    width: auto;
+    height: max-content;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3vmax;
+    font-size: 1.3vw;
+    line-height: .1vmax;
+    color: #185E9C;
+}
+
+.teksty2
+{
+    
+    width: auto;
+    height: max-content;
+    display: flex;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5vmax;
+    font-size: 1.5vw;
+    line-height: 2.3vmax;
+    color: #101828;
+}
+
+.adres-e
+{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3vmax;
+    font-size: 1.3vw;
+    line-height: .1vmax;
+    color: #185E9C;
+}
+
+.teksty3
+{
+    width: auto;
+    height: max-content;
+    display: flex;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5vmax;
+    font-size: 1.5vw;
+    line-height: 2.3vmax;
+    color: #101828;
+}
+
+.numer
+{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3vmax;
+    font-size: 1.3vw;
+    line-height: .1vmax;
+    color: #185E9C;
+}
+
+.blok1-main
+{
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: #E0F2F0;
+    border-radius: 8px;
+}
+
+.footer
+{
+    width: 100%;
+    height: auto;
+}
+
+.stopka
+{
+    width: 100%;
+    height: 23vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1D2939;
+}
+
+.linia
+{
+    width: 165vh;
+    height: .2vh;
+    background: #475467;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tekst-footer1
+{
+    width: 100%;
+    height: auto;
+    margin-top: 15vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-tekst-footer1
+{
+    width: auto;
+    height: max-content;
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vh;
+    font-size: 1.2vmax;
+    line-height: 24px;
+    color: #98A2B3; 
+}
+
+.tekst-footer2
+{
+
+    width: 100%;
+    height: auto;
+    margin-top: 15vh;
+    margin-left: 93vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vh;
+    font-size: 1.2vmax;
+    line-height: 24px;
+    font-size: 1.2vh;
+    font-size: 1.2vmax;
+    color: #98A2B3;
+
+}
+
+.main-tekst-footer2
+{
+    width: auto;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.dreamlogo
+{
+    width: 55vmax;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-dream
+{
+    margin-top: 15vh;
+    width: 90%;
+    height: auto;
+}
+
+
+
+
+
+
+/*
+To było w html jak byś nie wiedział po co to tutaj dałem, to dałem to tutaj dla backupu.
+
+<!--Kontener dla Rectangle 2 oraz Rectangle 4-->
+                <div id="rectangle-1">
+                    <img id="rect-4" src="rectangle/Rectangle 4.png" alt="rerctangle-4">
+
+                    <img id="rect-2" src="rectangle/Rectangle 2.png" alt="rerctangle-2">
+                </div>
+        
+                
+
+                <!--Kontener dla ciężarówki-->
+                <div id="truck"><img src="img/NicePng_dump-truck-png_831957 1@2x.png" alt="TruckIMG"></div>
+                
+                <!--Kontener dla Rectangle 1 oraz Rectangle 3-->
+                <div id="rectangle-2">
+                    <img id="rect-3" src="rectangle/Rectangle 1.png" alt="rerctangle-3">
+
+                    <img id="rect-1" src="rectangle/Rectangle 3.png" alt="rerctangle-1">
+                </div>
+
+A to w css też dla backupu
+#rectangle-1 {
+    position: absolute;
+    top: 16.5%;
+    right: 15%;
+    width: 10%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#rect-2 {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    margin-top: 3%;
+}
+
+#rect-4 {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    margin-left: 15%;
+}
+
+#rectangle-2 {
+    position: absolute;
+    top: 31.5%;
+    right: 40%;
+    width: 10%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#rect-1 {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+}
+
+#rect-3 {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    margin-left: 15%;
+    margin-top: 3%;
+}
+*/
